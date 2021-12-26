@@ -1,19 +1,19 @@
+import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
 import styled from "styled-components/native";
-
 
 export const Page = styled.SafeAreaView`
   flex: 1;
   align-items: center;
 `;
 
-export const  HeaderText = styled.Text`
-  font-size: 25px;
+export const HeaderText = styled.Text`
+  margin-top: 20px;
+  font-size: ${RFValue(25)}px;
 `;
 
-
 export const Input = styled.TextInput`
-  width: 90%;
-  height: 50px;
+  width: ${RFPercentage(45)}px;
+  height: ${RFValue(50)}px;
   font-size: 18px;
   background-color: #eee;
   margin-top: 20px;
@@ -35,13 +35,13 @@ export const ResultArea = styled.View`
 `;
 
 export const ResultItemTitle = styled.Text`
-  font-size: 18px;
+  font-size: ${RFValue(18)}px;
   font-weight: bold;
   margin-top: 30px;
 `;
 
 export const ResultItem = styled.Text`
-  font-size: 15px;
+  font-size: ${RFValue(15)}px;
 `;
 
 export const PctArea = styled.View`

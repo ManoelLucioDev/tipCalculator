@@ -1,10 +1,7 @@
 import { TipCalculator } from "./src/components/TipCalculator";
 
-
 const App = () => {
-  return (
-      <TipCalculator />
-  );
+  return <TipCalculator />;
 };
 
 export default App;
